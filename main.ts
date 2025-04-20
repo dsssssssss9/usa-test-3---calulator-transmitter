@@ -32,12 +32,17 @@ input.onButtonPressed(Button.A, function () {
     Number2 = randint(0, 9)
 })
 function Reward () {
-    for (let index = 0; index < 16; index++) {
+    for (let index = 0; index < 10; index++) {
         lcdDisplay.lcdSetBgcolor(lcdDisplay.lcdGetRgbColor(randint(0, 255), randint(0, 255), randint(0, 255)))
         basic.showIcon(IconNames.Happy)
-        basic.pause(100)
         basic.clearScreen()
     }
+    for (let index = 0; index < 16; index++) {
+        lcdDisplay.lcdDisplayIamge(1, "/expression icon/happy.png", randint(0, 320), randint(0, 240), randint(1, 2) * 256)
+        basic.pause(100)
+    }
+    lcdDisplay.lcdClearAll()
+    lcdDisplay.lcdDisplayIamge(2, "/expression icon/funny.png", randint(0, 320), randint(0, 240), 512)
 }
 function TooHigh () {
     lcdDisplay.lcdClearAll()

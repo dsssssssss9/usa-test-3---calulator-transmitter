@@ -34,7 +34,10 @@ function TooHigh () {
     keyboard.vibrationMotor(OnOff.ON)
     basic.pause(500)
     keyboard.vibrationMotor(OnOff.OFF)
+    keyboard.ledBlank()
     lcdDisplay.lcdDisplayText("Too High!!", 1, 120, 120, lcdDisplay.FontSize.Large, 0xFF0000)
+    basic.clearScreen()
+    lcdDisplay.lcdClearAll()
 }
 function Correct () {
     lcdDisplay.lcdDisplayText("YOU GOT IT!!!", 1, 120, 120, lcdDisplay.FontSize.Large, 0xFF0000)

@@ -1,23 +1,23 @@
 {
-    "name": "USA Test 3 - Calulator Transmitter",
+    "name": "hi lo 3",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "Math-Automatic": "github:DFRobot/pxt-Math-Automatic#08a6c84e26f36132f2946e6b681f7ea55f3e34cc",
-        "WhaleySansFont": "github:makecode-extensions/WhaleySansFont#v1.1.0"
+        "Math-Automatic": "github:dfrobot/pxt-math-automatic#08a6c84e26f36132f2946e6b681f7ea55f3e34cc"
     },
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "_locales/en-GB/README.md"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "5.0.12",
+        "target": "7.0.61",
         "targetId": "microbit"
     },
     "supportedTargets": [

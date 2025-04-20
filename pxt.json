@@ -5,7 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "Math-Automatic": "github:dfrobot/pxt-math-automatic#08a6c84e26f36132f2946e6b681f7ea55f3e34cc"
+        "Math-Automatic": "github:dfrobot/pxt-math-automatic#08a6c84e26f36132f2946e6b681f7ea55f3e34cc",
+        "lcdDisplay": "github:DFRobot/pxt-DFRobot_lcdDisplay#v0.0.6"
     },
     "files": [
         "main.blocks",

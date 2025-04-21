@@ -17,7 +17,7 @@ function TooLow () {
     keyboard.vibrationMotor(OnOff.ON)
     basic.pause(200)
     keyboard.vibrationMotor(OnOff.OFF)
-    lcdDisplay.lcdDisplayText("Too Low!!", 1, 120, 120, lcdDisplay.FontSize.Large, 0xFF0000)
+    lcdDisplay.lcdDisplayText("Too Low!!", 1, 120, 120, lcdDisplay.FontSize.Large, 0x0000ff)
     basic.pause(100)
     keyboard.ledBlank()
     basic.clearScreen()
@@ -35,7 +35,7 @@ function Reward () {
         basic.pause(100)
     }
     lcdDisplay.lcdClearAll()
-    lcdDisplay.lcdDisplayIamge(2, "/expression icon/funny.png", randint(0, 320), randint(0, 240), 512)
+    lcdDisplay.lcdDisplayIamge(2, "/expression icon/funny.png", randint(32, 100), randint(32, 160), 512)
     basic.pause(1000)
     lcdDisplay.lcdSetBgIamge("frank2_320x240.png")
 }
@@ -53,8 +53,8 @@ function TooHigh () {
     keyboard.vibrationMotor(OnOff.ON)
     basic.pause(200)
     keyboard.vibrationMotor(OnOff.OFF)
-    lcdDisplay.lcdDisplayText("Too High!!", 1, 120, 120, lcdDisplay.FontSize.Large, 0xFF0000)
-    basic.pause(100)
+    lcdDisplay.lcdDisplayText("Too High!!", 1, 120, 120, lcdDisplay.FontSize.Large, 0xff0000)
+    basic.pause(200)
     basic.clearScreen()
     keyboard.ledBlank()
     lcdDisplay.lcdClearAll()
